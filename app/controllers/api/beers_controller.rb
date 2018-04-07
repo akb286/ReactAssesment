@@ -3,6 +3,19 @@ class Api::BeersController < ApplicationController
   # brewery_db.beers.all(name: 'Coors Light')
   # brewery_db.beers.random
 
+  # GET all beers?
+  def index
+  end
+
+  def show
+  end
+
+  def new
+  end
+
+  def edit
+  end
+
   def all
     send_response(brew_client.beers.all(p: @page))
   end
